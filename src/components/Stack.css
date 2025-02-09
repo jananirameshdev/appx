@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.techstack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    line-height:35.6535px
+}
+.text-red-500{
+   font-family:Archivo, sans-serif;
+    font-size:43.5765px;
+    line-height:52.2918px;
+    text-align:center;
+    letter-spacing:-1px;
+    color:#ef5332;
+    animation: magicReveal 1s ease-out forwards;
+}
+
+.titles {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Archivo, sans-serif;
+    font-size:43.5765px;
+    line-height:52.2918px;
+    text-align:center;
+    letter-spacing:-1px;
+}
+
+.stack-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: -390px;
+}
+
+.stack-image {
+    width: 800px;
+    height: 490px;
+    margin-left: 100px;
+}
+
+.labels {
+    margin-left: -160px;
+    text-align: left;
+}
+
+.label-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.label-item p{
+    margin-left: 20px;
+    font-family: "Inter" serif;
+    font-size: 20px;
+    color: #303030;
+    font-weight: 700;
+}
+.line {
+    width: 190px;
+    height: 2px;
+    background-color: black;
+    margin-right: 1rem;
+}
+@keyframes magicReveal {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+.titles {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, filter 0.6s ease-out;
+}
+
+.titles.visible {
+    animation: magicReveal 0.8s ease-out forwards;
+}
+
+@media (min-width: 768px) {
+    .stack-wrapper {
+        flex-direction: row;
+    }
+
+    .labels {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .techstack-container{
+        margin-top: -300px;
+    }
+    .titles {
+        font-size: 1.5rem;
+    }
+    .line{
+        width: 10px;
+        margin-top: 5px;
+        margin-left: 70px;
+    }
+    .stack-image {
+        width: 50%;
+        margin-left: 280px;
+        margin-bottom: -80px;
+        margin-top: -70px;
+    }
+
+    .label-item p {
+        font-size: 16px;
+    }
+}

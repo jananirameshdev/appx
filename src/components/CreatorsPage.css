@@ -1,0 +1,153 @@
+/* Page Layout */
+.creators-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #333;
+    padding: 40px 20px;
+    font-family: "Inter", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.contain {
+    display: flex;
+    align-items: flex-start; 
+    gap: 50px; 
+    max-width: 1200px;
+    width: 100%;
+}
+
+
+.scroll-container {
+    width: 300px; 
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+}
+
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    animation : scrollUp 10s linear infinite;
+    justify-items: center; 
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+.logo-item {
+    width: 70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 100%; 
+    height: auto; 
+}
+.content {
+    flex: 1;
+    text-align: left;
+}
+
+.title-orange {
+    font-size: 52px;
+    font-weight: bold;
+    color: #ef5332;
+}
+.content h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.title-black {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.content h1{
+    font-size: 50px;
+}
+.content h2{
+    font-size: 50px;
+}
+
+.description {
+    color: gray;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.schedule-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ef5332;
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.schedule-button:hover {
+    background-color: #000000;
+}
+@keyframes magicReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+.content h1,
+.content h2 {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+    transition: all 0.6s ease-out;
+}
+.visible .content h1,
+.visible .content h2 {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+.logo-grid {
+    animation: scrollUp 10s linear infinite;
+}

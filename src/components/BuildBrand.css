@@ -1,0 +1,184 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+.buildbrand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+    .main-video {
+       width:  578px;
+       height: 348px;
+        border-radius: 10px;
+    }
+.image-wrapper {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; 
+   
+}
+
+@media (min-width: 768px) {
+    .buildbrand-container {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+.text-content {
+    max-width: 500px;
+}
+
+.titled {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.highlighted {
+    color:#ef5332;
+}
+
+.description {
+    color: gray;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color:#ef5332;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cta-button i {
+    font-size: 1rem;
+}
+.image-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.image-wrapper {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}
+
+.top-text {
+    top: 10px;
+    left: 15px;
+    font-size: 1rem;
+}
+
+.bottom-text {
+    bottom: 10px;
+    left: 15px;
+    font-size: 1.5rem;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    height: 475px;
+    border-radius: 10px;
+}
+@keyframes magicReveal {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+.titled {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, filter 0.6s ease-out;
+}
+
+.titled.visible {
+    animation: magicReveal 0.8s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .buildbrand-container{
+        margin-top: -100px;
+    }
+    .main-title {
+        font-size: 2.5rem;
+    }
+    .earn-text {
+        font-size: 1.8rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    .user-img {
+        width: 80%;
+    }
+    .main-video {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .trusted-badge {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-title {
+        font-size: 2rem;
+    }
+    .earn-text {
+        font-size: 1.5rem;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .testimonial-container {
+        max-width: 100%;
+    }
+    .user-img {
+        width: 150px;
+        height: 200px;
+    }
+    .main-video {
+        width: 100%;
+        max-width: 350px;
+        margin-top: -150px;
+    }
+}

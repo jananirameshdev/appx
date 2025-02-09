@@ -1,0 +1,147 @@
+.container {
+    font-family: "Inter", sans-serif;
+    display: block;
+}
+
+.foot {
+    color: #222222;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin: 15px 39px;
+    width: 100%;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #082521;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.foot-content {
+    text-align: left;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.icon1 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .header img {
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header nav ul li {
+        margin: 5px 10px;
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        text-align: center;
+        gap: 10px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px; 
+    }
+
+    .foot-content {
+        text-align: center;
+    }
+
+    .address {
+        margin: 10px 0;
+    }
+
+    .social-media-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .header img {
+        height: 35px; 
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .header nav ul li {
+        margin: 5px 0;
+    }
+
+    .footer-container {
+        padding: 15px;
+    }
+
+    .foot-content p {
+        font-size: 14px; 
+    }
+    .icon1 {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Geist:wght@100..900&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.buildapp-container {
+    background-color: #ef5332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.buildapp-content {
+    max-width: 85%;
+}
+
+.buildapp-title {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Inter", serif;
+    font-size: 62px;
+    line-height: 23.769px;
+    text-align: start;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.buildapp-subtitle {
+    color: white;
+    font-size: 62px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: "Archivo", serif;
+}
+
+.highlight-s {
+    background-color: yellow;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button1 {
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button1:hover {
+        background-color: #fffd63;
+        transform: scale(1.1); 
+}@media (max-width: 768px) {
+    .buildapp-container {
+        min-height: 60vh; 
+    }
+
+    .buildapp-content {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .buildapp-title {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .buildapp-subtitle {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .cta-button1 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .buildapp-container {
+        min-height: 50vh; 
+    }
+
+    .buildapp-content {
+        max-width: 95%;
+    }
+
+    .buildapp-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .buildapp-subtitle {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .cta-button1 {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
